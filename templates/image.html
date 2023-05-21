@@ -29,7 +29,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <div class="d-flex align-items-center">
-      <img src="/static//images/download (1).jpg" alt="Logo"  class="d-inline-block align-top">
+      <img src="/static//images/logo.png" alt="Logo"  class="d-inline-block align-top">
       <span class="navbar-text ml-2">Object Detection Project By Mathesh</span>
     </div>
   </a>
@@ -57,23 +57,39 @@
                       </span>
                     </h1>
                     <h4>
-                      Using Python and pyt
+                      Using Python
                     </h4>
-                    <h6 style="padding-top: 20px; padding-bottom: 20px;">
-                      Just Drop You images for detecting Object
+                    <h6 style="padding-top: 10px; padding-bottom: 20px;">
+                      Here is the result
                     </h6>
                   
-                  <form action="/upload" method="post" enctype="multipart/form-data">
-                    <div class="input-group">
-                      <div class="custom-file" >
-                        <input type="file" class="custom-file-input form-control " accept=".jpg,.jpeg,.png,.gif" id="inputGroupFile04" name="file">
-                        <label class="custom-file-label"  for="inputGroupFile04">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-warning" id="uploadButton" type="submit">Upload</button>
-                      </div>
+                    <div class="text-center"  style="padding-bottom: 20px;"">
+                      <img src="{{op}}" class="img-fluid" alt="Responsive image">
                     </div>
-                  </form>
+                    <div>
+                      <div >
+                      <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        This Image Contains:
+                      </h2>
+                    </div>
+                      <h5>
+                      {% for number, text in numbers|zip(names) %}
+                        <li>{{ number }}: {{ text }}</li>
+                      {% endfor %}
+                      </h5>
+                    </div>
+                    
+                      <!-- <form action="/" method="post">
+                        <div style="padding-top: 20px;">
+                          <button style="color:black; font-family: cursive;" type="submit" class="btn btn-warning" data-toggle="button" aria-pressed="false">
+                            Back To Home
+                          </button>
+                        </div>
+                      </form> -->
+
+                    <div>
+                      <a href="/" class="btn btn-warning"> Back To Home </a>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
