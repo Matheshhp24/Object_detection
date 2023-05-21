@@ -13,7 +13,7 @@ dlib==19.24.1
 face-recognition==1.3.0
 face-recognition-models==0.3.0
 filelock==3.12.0
-Flask==2.3.2
+Flask==2.2.5
 Flask-SQLAlchemy==3.0.3
 fonttools==4.39.4
 gingerit==0.9.0
