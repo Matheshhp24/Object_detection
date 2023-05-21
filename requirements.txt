@@ -15,7 +15,7 @@ face-recognition-models==0.3.0
 filelock==3.12.0
 Flask==2.2.5
 Flask-SQLAlchemy==3.0.3
-fonttools==4.39.4
+fonttools==4.38.0
 gingerit==0.9.0
 greenlet==2.0.2
 gunicorn==20.1.0
