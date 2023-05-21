@@ -29,7 +29,7 @@ def upload():
         input_image.save(input_image_filepath)
        
         img=cv2.imread(input_image_filepath)
-        model = YOLO("yolo_weights/yolov8l")
+        model = YOLO("yolo_weights/yolov8n")
         result = model(img)
         global name
         name=[]
